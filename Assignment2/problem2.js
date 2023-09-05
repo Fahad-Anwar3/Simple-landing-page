@@ -10,22 +10,3 @@ function contains(obj, target) {
   }
   return false;
 }
-
-let nestedObject = {
-  data: {
-    info: {
-      stuff: {
-        thing: {
-          moreStuff: {
-            magicNumber: 44,
-            something: "foo2",
-          },
-        },
-      },
-    },
-  },
-};
-
-let targetValue = 44;
-let containsTarget = contains(nestedObject, targetValue);
-console.log(containsTarget); // true

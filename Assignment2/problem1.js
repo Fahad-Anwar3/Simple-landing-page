@@ -6,9 +6,3 @@ const all = (arr, callback) => {
   }
   return true;
 };
-
-let allAreLessThanSeven = all([1, 2, 9], function (num) {
-  return num < 7;
-});
-
-console.log(allAreLessThanSeven);
