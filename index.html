@@ -1,13 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Talenera</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
-    <h1>hellow world</h1>
-    <script type="text/javascript" src="js/script.js"></script> 
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Talentera</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header--menu">
+        <div class="header--logo">
+          <img src="logo.png" alt="Logo" />
+        </div>
+        <ul class="menu">
+          <li class="menu--item">
+            <a href="#team" class="menu--link">Team</a>
+          </li>
+          <li class="menu--item">
+            <a href="#work" class="menu--link">Work</a>
+          </li>
+          <li class="menu--item">
+            <a href="#" class="menu--link">Price</a>
+          </li>
+          <li class="menu--item">
+            <a href="#contact" class="menu--link">Contact</a>
+          </li>
+          <li class="menu--item">
+            <div class="dropdown">
+              <span class="dropdown--toggle">
+                <a class="menu--link">Dropdown </a>
+                <img
+                  src="./assets/down-arrow.svg"
+                  alt="dropdown arrow"
+                  class="menu--dropdown--icon"
+                />
+              </span>
+              <ul class="dropdown--menu">
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+                <li><a href="#">Item 4</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="header--search-icon">
+        <img src="./assets/search.svg" alt="Search" />
+      </div>
+      <div class="header--hamburger-icon">
+        <img src="./assets/menu-icon.svg" alt="Menu" />
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <button class="hero-button">Learn More</button>
+      </section>
+
+      <section id="team" class="our-team">
+        <h1 class="our-team--title">Our Team</h1>
+        <h2 class="our-team--subtitle">Meet the team - our office rats</h2>
+        <section class="our-team--members">
+          <div class="our-team--member">
+            <img src="./assets/user.png" alt="Team Member 1" />
+            <h2 class="our-team--name">John Doe</h2>
+            <p class="our-team--designation">CEO</p>
+          </div>
+
+          <div class="our-team--member">
+            <img src="./assets/user.png" alt="Team Member 2" />
+            <h2 class="our-team--name">Jane Smith</h2>
+            <p class="our-team--designation">COO</p>
+          </div>
+
+          <div class="our-team--member">
+            <img src="./assets/user.png" alt="Team Member 3" />
+            <h2 class="our-team--name">Mark Johnson</h2>
+            <p class="our-team--designation">CTO</p>
+          </div>
+
+          <div class="our-team--member">
+            <img src="./assets/user.png" alt="Team Member 4" />
+            <h2 class="our-team--name">Emily Brown</h2>
+            <p class="our-team--designation">CMO</p>
+          </div>
+        </section>
+      </section>
+      <section id="work" class="testimonials">
+        <div class="testimonial-text">
+          <h2>What Our Clients Say</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam non
+            urna eget ipsum efficitur bibendum.
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <img src="./assets/testimonial.jpg" alt="Client 1" loading="lazy" />
+          <p>Client Name 1</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Nullam non urna eget ipsum efficitur bibendum.</p>
+          <p>Quisque vel lacus eu libero sodales tincidunt.</p>
+          <p>Integer vel mauris vel libero vehicula tincidunt.</p>
+          <p>Curabitur tincidunt, quam sed venenatis condimentum.</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="./assets/testimonial.jpg" alt="Client 2" loading="lazy" />
+          <p>Client Name 2</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Nullam non urna eget ipsum efficitur bibendum.</p>
+          <p>Quisque vel lacus eu libero sodales tincidunt.</p>
+          <p>Integer vel mauris vel libero vehicula tincidunt.</p>
+          <p>Curabitur tincidunt, quam sed venenatis condimentum.</p>
+        </div>
+        <div class="testimonial-card">
+          <img src="./assets/testimonial.jpg" alt="Client 3" loading="lazy" />
+          <p>Client Name 3</p>
+
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <p>Nullam non urna eget ipsum efficitur bibendum.</p>
+          <p>Quisque vel lacus eu libero sodales tincidunt.</p>
+          <p>Integer vel mauris vel libero vehicula tincidunt.</p>
+          <p>Curabitur tincidunt, quam sed venenatis condimentum.</p>
+        </div>
+      </section>
+      <section id="contact" class="contact-us">
+        <div class="contact-us--details">
+          <h2 class="contact-us-title">Contact Us</h2>
+          <h4>Address</h4>
+          <p class="contact-us--address">
+            <img
+              src="./assets/location.svg"
+              class="contact-us-icons"
+              alt="location icon"
+            />
+            Amman Jordan
+          </p>
+          <p class="contact-us--phone">
+            <img
+              src="./assets/tele.svg"
+              class="contact-us-icons"
+              alt="phone icon"
+            />+9627 0000 0000
+          </p>
+          <p class="contact-us--email">
+            <img
+              src="./assets/email.svg"
+              class="contact-us-icons"
+              alt="email icon"
+            />test@email.com
+          </p>
+        </div>
+        <div class="contact-us--form-container">
+          <form class="contact-us--form">
+            <label for="name" class="contact-us--form-label">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              class="contact-us--form-input"
+            />
+
+            <label for="email" class="contact-us--form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              class="contact-us--form-input"
+            />
+
+            <label for="message" class="contact-us--form-label">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              class="contact-us--form-input contact-us--form-textarea"
+            ></textarea>
+
+            <div class="contact-us--form-footer">
+              <label for="checkbox" class="contact-us--form-label"
+                ><input
+                  type="checkbox"
+                  id="checkbox"
+                  class="contact-us--form-checkbox"
+                />I Like it!</label
+              >
+              <button type="submit" class="contact-us--form-submit">
+                Submit
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <button id="backToTopBtn" class="back-to-top">
+        <img
+          src="./assets/up-arrow.png"
+          alt="back to top arrow"
+          class="contact-us-icons"
+        />
+      </button>
+    </main>
+    <footer class="footer">
+      <h3 class="footer--title">Follow Us</h3>
+      <div class="footer--icons">
+        <div class="footer--icon-box">
+          <img src="./assets/fb.svg" class="footer--icon" alt="facebook icon" />
+        </div>
+        <div class="footer--icon-box">
+          <img
+            src="./assets/twitter.svg"
+            class="footer--icon"
+            alt="facebook icon"
+          />
+        </div>
+        <div class="footer--icon-box">
+          <img
+            src="./assets/google.svg"
+            class="footer--icon"
+            alt="facebook icon"
+          />
+        </div>
+        <div class="footer--icon-box">
+          <img
+            src="./assets/insta.svg"
+            class="footer--icon"
+            alt="facebook icon"
+          />
+        </div>
+      </div>
+    </footer>
+    <div class="drawer" id="mobileMenu">
+      <button class="drawer-close-button" id="closeDrawerButton">×</button>
+      <a href="#team" class="menu--link">Team</a>
+      <a href="#work" class="menu--link">Work</a>
+      <a href="#" class="menu--link">Price</a>
+      <a href="#contact" class="menu--link">Contact</a>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
 </html>
